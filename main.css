@@ -1,1 +1,24 @@
+.kepbalra{
+    float:left;
+    width: 20%;
+    height: 20%;
+}
+.kepjobbra{
+    
+        float:right;
+        width: 20%;
+        height: 20%;
+    
+}
+body{
+font-size: 30pt;
+letter-spacing: 0.01em;
+color:black;
+}
+.szoveginfo{
+    font-size:large;
+    letter-spacing: normal;
+}
+
+
 
