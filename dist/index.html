@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,22 +10,34 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-<body> 
+
+<body>
     <button onclick="myFunction()">Kép Pozítció váltás</button>
-    
+
     <script>
-    function myFunction() {
-       var element = document.getElementById("myDIV");
-       element.classList.toggle("kepjobbra");
-    }
+        function myFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("kepjobbra");
+        }
+
+        function changeText2() {
+            var userInput = document.getElementById('userInput').value;
+            var myDIV = document.getElementById('myDIV');
+            document.getElementById('myDIV').src = userInput;
+            myDIV.img = userInput;
+            myDIV.innerHTML = myDIV.img;
+        }
     </script>
+    <input type='text' id='userInput' value='Kép url' />
+    <input type='button' onclick='changeText2()' value='Csere' />
 
 
 
-    <p class="szoveginfo">A szöveg betűmérete: 30pt<br>
-        A sorköz mérete: 0.01<br>
-        Betűszín: black</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<img  id="myDIV" class="kepbalra" src="Cute_dog.jpg"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="szoveginfo">A szöveg betűmérete: 30pt<br> A sorköz mérete: 0.01<br> Betűszín: black</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<img id="myDIV" class="kepbalra" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg"> Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.</p>
     <footer>Budavári Dominik 14/T</footer>
 </body>
+
 </html>
